@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Create Your Smoothie!</h1>
+    <form id="smoothieForm">
+        <section>
+            <label>Choose your base:</label>
+            <select name="base">
+                <option value="milk">Milk</option>
+                <option value="almondMilk">Almond Milk</option>
+                <option value="soyMilk">Soy Milk</option>
+                <option value="yogurt">Yogurt</option>
+            </select>
+        </section>
+        <section>
+            <label>Select your fruits:</label>
+            <input type="checkbox" name="fruit" value="banana"> Banana
+            <input type="checkbox" name="fruit" value="strawberry"> Strawberry
+            <input type="checkbox" name="fruit" value="blueberry"> Blueberry
+        </section>
+        <section>
+            <label>Add-ins:</label>
+            <input type="checkbox" name="addins" value="protein"> Protein Powder
+            <input type="checkbox" name="addins" value="chia"> Chia Seeds
+        </section>
+        <section>
+            <label>Size:</label>
+            <input type="radio" name="size" value="small"> Small
+            <input type="radio" name="size" value="medium" checked> Medium
+            <input type="radio" name="size" value="large"> Large
+        </section>
+        <button type="submit">Build My Smoothie!</button>
+    </form>
+    <div id="result" class="result-box"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
